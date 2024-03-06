@@ -10,6 +10,10 @@ input {
     width: 100%;
 }
 
+a {
+    display: inline-block;
+}
+
 .dashboard {
     display: grid;
     grid-template-columns: 256px minmax(0, 1fr);

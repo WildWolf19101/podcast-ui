@@ -1,0 +1,14 @@
+@import "./home/popular";
+@import "./home/trending";
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 36px 60px;
+
+    &-main {
+        max-width: 676px;
+    }
+}

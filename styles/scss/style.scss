@@ -7,60 +7,6 @@
 @import "./layout/navbar";
 @import "./layout/top-bar";
 
+@import "./pages/home";
+
 @import "./vendors/fonts";
-
-.content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 60px;
-    padding: 36px 60px;
-
-    &-main {
-        max-width: 674px;
-    }
-}
-
-.popular {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 20px;
-
-    &-header {
-        @include text(600, 16px, 24px);
-    }
-
-    &-items {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 31px;
-    }
-
-    &-item {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-        text-decoration: none;
-    }
-
-
-
-    &-avatar {
-        @include size(64px);
-        object-fit: cover;
-        border-radius: 100rem;
-        padding: 2px;
-        border: 1px solid var(--color-secondary);
-        flex-shrink: 0;
-    }
-
-    &-text {
-        @include text(400, 14px, 20px);
-        color: var(--color-gray1);
-    }
-}

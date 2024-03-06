@@ -6,6 +6,8 @@
   --color-black2: rgba(17, 20, 45, 1);
   --color-gray1: rgba(132, 148, 171, 1);
   --color-gray2: rgba(233, 238, 244, 1);
+  --color-Natural: rgba(103, 106, 111, 1);
+  --color-natural1: rgba(248, 248, 248, 1);
   --color-natural2: rgba(240, 243, 246, 1);
   --color-white: rgba(255, 255, 255, 1);
   --font-family: "IBM Plex Sans", sans-serif;
@@ -62,6 +64,10 @@ img,
 input {
   display: block;
   width: 100%;
+}
+
+a {
+  display: inline-block;
 }
 
 .dashboard {
@@ -217,17 +223,6 @@ input {
   border-radius: 100rem;
 }
 
-.content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 60px;
-  padding: 36px 60px;
-}
-.content-main {
-  max-width: 674px;
-}
-
 .popular {
   display: flex;
   justify-content: flex-start;
@@ -268,6 +263,89 @@ input {
   font-size: 14px;
   line-height: 20px;
   color: var(--color-gray1);
+}
+
+.trending {
+  margin-top: 28px;
+}
+.trending-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.slider {
+  margin-top: 11px;
+  display: grid;
+  grid-template-columns: 329px minmax(0, 1fr);
+  background-color: var(--color-natural1);
+  border-radius: 10px;
+}
+.slider-content {
+  margin: 20px 0 20px 20px;
+}
+.slider-image {
+  width: 100%;
+  position: relative;
+}
+
+.content-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+}
+.content-text {
+  margin-top: 11px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-Natural);
+}
+.content-author {
+  text-decoration: none;
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-Natural);
+}
+.content-author span {
+  color: var(--color-black1);
+}
+.content-button {
+  margin: 20px 0 0;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-primary);
+  padding: 8px 14px;
+  border-radius: 10px;
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.image-author {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  width: 332px;
+  height: 274px;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 36px 60px;
+}
+.content-main {
+  max-width: 676px;
 }
 
 /*# sourceMappingURL=style.css.map */
