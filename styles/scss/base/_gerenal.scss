@@ -1,0 +1,20 @@
+body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--color-black1);
+}
+
+img,
+input {
+    display: block;
+    width: 100%;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 256px minmax(0, 1fr);
+    min-height: 100vh;
+    max-width: 1488px;
+    padding: 24px;
+    margin: 0 auto;
+}

@@ -1,0 +1,86 @@
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 60px;
+}
+
+// search
+.search {
+    max-width: 360px;
+    position: relative;
+
+    &-input {
+        width: 360px;
+        background-color: #fafafa;
+        border-radius: 8px;
+        padding: 15px;
+        padding-left: 55px;
+        outline: none;
+        border: 1px solid transparent;
+        transition: all 0.2s linear;
+
+        &:focus {
+            border-color: #2979ff;
+            background-color: transparent;
+        }
+    }
+
+    &-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+    }
+}
+
+// tools
+.tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    &-button {
+        padding: 13px 16px;
+        border-radius: 12px;
+        background-color: var(--color-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        @include text(600, 15px, 22px);
+        color: var(--color-white);
+        transition: all 0.2s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &-notify {
+        position: relative;
+
+        &:before {
+            content: "";
+            background-color: red;
+            border-radius: 100rem;
+            @include size(11px);
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 2px solid var(--color-white);
+        }
+    }
+
+    &-icon {
+        @include size(24px);
+        object-fit: cover;
+    }
+
+    &-avatar {
+        @include size(48px);
+        object-fit: cover;
+        border-radius: 100rem;
+    }
+}
